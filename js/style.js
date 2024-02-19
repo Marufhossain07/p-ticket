@@ -51,18 +51,18 @@ for (const seat of seats) {
 const apply = document.getElementById('apply');
 apply.addEventListener('click', function () {
     const inputElement = document.getElementById('input');
-
+    const totalPriceElement = document.getElementById('total-price').innerText;
     const input = inputElement.value;
     const grandTotalElement = document.getElementById('grand-total');
     const inputField = document.getElementById('coupon-field')
-    if (input == "NEW15") {
+    if (input == "NEW15" && totalPriceElement == 2000) {
         let total = 2000;
         const discount = total * 0.15;
         const newTotal = total - discount;
         grandTotalElement.innerText = newTotal;
         inputField.classList.add('hidden')
     }
-    else if (input == "Couple 20") {
+    else if (input == "Couple 20" && totalPriceElement == 2000) {
         let total = 2000;
         const discount = total * 0.20;
         const newTotal = total - discount;
