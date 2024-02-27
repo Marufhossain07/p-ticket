@@ -30,13 +30,13 @@ function totalPrice() {
    
     const totalPrice = totalPriceElement.innerText;
     const totalNumber = parseInt(totalPrice);
-    let newTotal = totalNumber + 500;
+    let newTotal = totalNumber + 550;
     totalPriceElement.innerText = newTotal
     grandTotalElement.innerText = newTotal;
     
-    if( newTotal > 2000){
-         totalPriceElement.innerText = 2000;
-         grandTotalElement.innerText = 2000;
+    if( newTotal > 2200){
+         totalPriceElement.innerText = 2200;
+         grandTotalElement.innerText = 2200;
         
     }
 }
